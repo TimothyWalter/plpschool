@@ -141,7 +141,7 @@ font-size: larger;
     font-weight: 700;
     line-height: 1.2;
 }
-h1 {
+p {
     width: 21ch;
     overflow:hidden;
     border-right:3px solid;
@@ -243,3 +243,4 @@ h1 {
 
 
 }
+
