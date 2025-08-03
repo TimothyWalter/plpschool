@@ -89,30 +89,18 @@ font-size: larger;
     overflow: hidden;
 }
 
-@keyframes showright{
-    100%{width: 0;}
+@keyframes typing {
+    from {width: 0;}
 }
 
+.@keyframes blinking {
+    50%{border-colour: transparent;}
+}
 .logo {
     font-size: 25px;
     color: #000;
     text-decoration: none;
     font-weight: 600;
-}
-
-.home::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    color: #00abf0;
-    animation: forwards;
-    animation-delay: 4s;
-    animation-name: showright;
-    animation-timing-function: ease;
-
-
 }
 
 .navbar a:hover,
@@ -153,18 +141,16 @@ font-size: larger;
     font-weight: 700;
     line-height: 1.2;
 }
-.home-content h3::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    color: #00abf0;
-    animation: showRights 1s ease forwards;
-    background: #081b29;
-    animation-delay: 2s;
-
-
+h1 {
+    width: 21ch;
+    overflow:hidden;
+    border-right:3px solid;
+    colour: #eee;
+    font-family: monospace;
+    font-size: 26px;
+    white-space: nowrap;
+    animation: typing 2.5s steps(21), blinking 0.5s
+    infinite step-end alternate;
 }
 
 .home-content h3P{
@@ -254,5 +240,6 @@ font-size: larger;
 }
 .btn-box a:hover::before{
     width: 100%;
+
 
 }
