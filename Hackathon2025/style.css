@@ -140,14 +140,14 @@ font-size: larger;
     line-height: 1.2;
 }
 p {
-    width: 21ch;
+    width: 111ch;
     overflow:hidden;
     border-right:3px solid;
     colour: #eee;
     font-family: monospace;
     font-size: 26px;
     white-space: nowrap;
-    animation: typing 2.5s steps(21), blinking 0.5s
+    animation: typing 2.5s steps(100,end), blinking 0.5s
     infinite step-end alternate;
 }
 
@@ -241,6 +241,7 @@ p {
 
 
 }
+
 
 
 
