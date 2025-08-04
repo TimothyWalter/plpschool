@@ -38,7 +38,6 @@ h1 a{
     background: #fff;
     padding-left: 20px;
     text-align: center;
-    transform: rotate(-30) skew(25) translate(0,0);
     border-radius: 20px;
     box-shadow: 0 30px 20px #505050;
     background-color: #50505061;
@@ -243,4 +242,5 @@ p {
 
 
 }
+
 
