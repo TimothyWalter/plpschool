@@ -28,22 +28,6 @@ body{
 
 }
 
-p a{
-    text-decoration: greenyellow;
-    display: absolute;
-    display: circle;
-    width: 200px;
-    height: 80px;
-    background: #fff;
-    padding-left: 20px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 30px 20px #505050;
-    background-color: #50505061;
-    box-shadow: 1px 1px 3px darkcyan;
-
-}
-
 .navbar{
     background-image: url(download.jpg);
     background-size: cover;
@@ -88,11 +72,12 @@ font-size: larger;
 }
 
 @keyframes typing {
-    from {width: 0;}
+    from {width: 0%;}
+    to{width:100%}
 }
 
 @keyframes blinking {
-    50%{border-colour: transparent;}
+    50%{box-shadow: 1px 1px 3px darkcyan}
 }
 .logo {
     font-size: 25px;
@@ -104,19 +89,6 @@ font-size: larger;
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 
 .home{
@@ -139,7 +111,8 @@ font-size: larger;
     font-weight: 700;
     line-height: 1.2;
 }
-p {
+
+header {
     width: 111ch;
     overflow:hidden;
     border-right:3px solid;
@@ -147,8 +120,12 @@ p {
     font-family: monospace;
     font-size: 26px;
     white-space: nowrap;
-    animation: typing 2.5s steps(100,end), blinking 0.5s
+    animation: typing 2.5s steps(100,end) forwards, blinking 0.5s
     infinite step-end alternate;
+    z-index:1;
+    transition: 5s;
+    display:flex;
+    
 }
 
 .home-content h3P{
@@ -241,6 +218,7 @@ p {
 
 
 }
+
 
 
 
