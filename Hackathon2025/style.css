@@ -28,8 +28,7 @@ body{
 
 }
 
-
-h1 a{
+p a{
     text-decoration: greenyellow;
     display: absolute;
     display: circle;
@@ -92,7 +91,7 @@ font-size: larger;
     from {width: 0;}
 }
 
-.@keyframes blinking {
+@keyframes blinking {
     50%{border-colour: transparent;}
 }
 .logo {
@@ -242,5 +241,6 @@ p {
 
 
 }
+
 
 
