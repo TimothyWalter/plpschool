@@ -1,0 +1,8 @@
+def calc_final_price(price, discount):
+ if discount>=20:
+  final_price = price * discount/100
+  return final_price
+ else:
+  return price
+calc_final_price(price = float(input("Enter price: ")),discount = float(input("Enter discount (as a percentage, e.g., 20 for 20%): "))
+)
