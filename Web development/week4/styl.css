@@ -1,0 +1,121 @@
+.body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lawngreen;
+    padding: 0;
+    height: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    perspective: 800px;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background-color: transparent;
+    text-decoration: dotted;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px darkcyan;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+ 
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    overflow: visible;
+}
+
+
+.front-page,
+.back-page{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 0.8s ease-in-out;
+}
+
+.back-page{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    transform: rotateX(180deg);
+    box-shadow: 0 0 5px 2px rgb(50, 50, 50, 0.25);
+}
+
+.back-page-info{
+    position: absolute;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    text-align: justify;
+    writing-mode: sideways-rl;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+.grid{
+    background-color: lavenderblush;
+    grid-auto-flow: column;
+    text-align: center;
+    box-shadow: 1px 1px 3px darkcyan;
+    
+}
+
+.card-title{
+    font-style: italic 2rem;
+    font-weight: bold;
+    font-size: 12px;
+    color: lightsalmon;
+    width: 60px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    clip-path: inset(0.5px round 8px 0);
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    padding: 3px;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    color: #000;
+    text-align: center;
+    display: inline-flex;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.5);
+}
