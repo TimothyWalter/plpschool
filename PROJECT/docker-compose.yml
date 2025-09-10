@@ -1,0 +1,47 @@
+
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    working_dir: /usr/src/app
+    command: npm run dev
+    volumes:
+      - ./backend:/usr/src/app
+    environment:
+      - NODE_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/farmcap
+      - FRONTEND_URL=http://localhost:3000
+      - JWT_SECRET=replace_this_jwt_secret
+      - TWILIO_SID=your_twilio_sid
+      - TWILIO_AUTH=your_twilio_auth
+      - TWILIO_PHONE=+1234567890
+      - SENDGRID_KEY=your_sendgrid_key
+      - FROM_EMAIL=you@example.com
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./frontend
+    working_dir: /usr/src/app
+    command: npm run start
+    volumes:
+      - ./frontend:/usr/src/app
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:5
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
