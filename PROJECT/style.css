@@ -1,0 +1,155 @@
+/* Reset default margins and ensure consistent box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Products container: single column, centered */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Individual product card */
+.product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for product cards */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product title and price */
+.product h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Add to basket button */
+.product button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #2980b9;
+}
+
+/* Basket styling: fixed position, clean design */
+.basket {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Basket title */
+.basket h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Basket items */
+.basket-item {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Total price in basket */
+.basket p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+/* Checkout button */
+.basket button {
+    width: 100%;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.basket button:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .products {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+
+    .basket {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+}
