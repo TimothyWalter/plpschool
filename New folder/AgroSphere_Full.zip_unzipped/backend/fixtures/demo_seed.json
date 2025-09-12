@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "buyer_demo",
+      "email": "buyer@demo.com",
+      "role": "buyer"
+    },
+    {
+      "username": "seller_demo",
+      "email": "seller@demo.com",
+      "role": "seller"
+    },
+    {
+      "username": "company_demo",
+      "email": "company@demo.com",
+      "role": "company"
+    }
+  ],
+  "products": [
+    {
+      "sku": "P001",
+      "name": "Maize 50kg",
+      "price": 2700
+    },
+    {
+      "sku": "P002",
+      "name": "Tomatoes Crate",
+      "price": 1890
+    },
+    {
+      "sku": "P003",
+      "name": "Fresh Milk 20L",
+      "price": 4320
+    }
+  ],
+  "employees": [
+    {
+      "id": "EMP001",
+      "name": "Alice Johnson",
+      "role": "cashier",
+      "employee_number": "001",
+      "gender": "female"
+    },
+    {
+      "id": "EMP002",
+      "name": "Bob Smith",
+      "role": "manager",
+      "employee_number": "002",
+      "gender": "male"
+    }
+  ]
+}
