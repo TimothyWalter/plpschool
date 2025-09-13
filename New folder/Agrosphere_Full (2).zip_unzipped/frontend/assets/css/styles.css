@@ -1,0 +1,4 @@
+:root{--bg:#05060a;--accent:#00f7d6}body{background:linear-gradient(180deg,#03060a,#071827);color:#e6f9fb;font-family:Inter,Arial}
+.topbar{display:flex;justify-content:space-between;padding:12px 20px}
+.logo{color:var(--accent);font-weight:700}
+.card{background:#071828;padding:12px;border-radius:10px}

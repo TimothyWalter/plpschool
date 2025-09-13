@@ -1,0 +1,20 @@
+
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer</title><link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<header class="topbar"><div class="logo">AgroSphere</div><div><button id="cartBtn">Cart <span class="cart-count">0</span></button></div></header>
+<main style="max-width:1000px;margin:20px auto;display:flex;gap:20px">
+<section style="flex:1">
+  <div class="card"><h2>Fresh produce near you</h2><div><input id="searchInput" placeholder="Search products or towns"></div></div>
+  <div class="card" style="margin-top:12px"><h3>Products</h3>
+    <div class="product"><div><strong>Maize 50kg</strong><div>KSh 2700</div><button class="add-cart" data-sku="P1" data-name="Maize 50kg" data-price="2700">Add to cart</button></div></div>
+    <div class="product"><div><strong>Tomatoes Crate</strong><div>KSh 1890</div><button class="add-cart" data-sku="P2" data-name="Tomatoes Crate" data-price="1890">Add to cart</button></div></div>
+  </div>
+  <div class="card" style="margin-top:12px"><h3>Promo</h3><div class="video"><video id="promoVideo" src="assets/videos/farm_ad.mp4" controls playsinline></video></div></div>
+</section>
+<aside style="width:300px">
+  <div class="card"><div style="display:flex;gap:10px;align-items:center"><div style="width:64px;height:64px;border-radius:50%;overflow:hidden"><img src="assets/images/profile.svg" width="64"></div><div><strong>Demo Buyer</strong><div>buyer@demo.com</div></div></div><div style="margin-top:10px"><strong>Support</strong><div>Phone: +254700000000</div><div>Email: support@agrosphere.demo</div><div class="socials"><a href="#">IG</a> <a href="#">TT</a> <a href="#">WA</a></div></div></div>
+  <div id="cartDropdown" class="card" style="margin-top:12px"><h4>Your Cart</h4><div id="cartItems"></div><div id="cartFooter"></div></div>
+</aside>
+</main>
+<div id="chatBtn" class="chatbot">💬</div>
+<div id="chatWindow" class="chat-window" style="display:none;flex-direction:column"><div style="font-weight:700">AgroBot</div><div id="chatMessages" class="messages" style="flex:1;overflow:auto"></div><div class="input"><input id="chatInput" placeholder="Type..."><button id="chatSend">Send</button></div></div>
+<script src="assets/js/main.js"></script></body></html>
