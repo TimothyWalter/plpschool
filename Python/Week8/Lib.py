@@ -9,9 +9,6 @@ import seaborn as sns
 from collections import Counter
 import re
 
-# Optional: for word cloud
-from wordcloud import WordCloud
-
 # Load dataset
 df = pd.read_csv("metadata.csv")
 
